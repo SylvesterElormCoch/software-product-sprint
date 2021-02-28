@@ -1,19 +1,126 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elorm's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/45e39032a4.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#interests" class="nav__link">My interests</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Elorm Coch</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Welcome!</p>
+            <img src="img/dev-elorm-02.jpg" alt="Elorm's profile picture" class="intro__img">
+        </section>
+
+        <!-- My Interests -->
+        <section class="my-interests" id="interests">
+            <h2 class="section__title section__title--interests">My interests</h2>
+            <div class="interests">
+                <!-- / interest -->
+                <div class="interest">
+                    <h3>Design + Development</h3>
+                    <p>I enjoy going through the design process of need finding, ideating, prototyping and testing. I find it extremely rewarding being able to start from nothing to creating solutions and learning a lot about problems people face</p>
+                </div>
+
+                <!-- / interest -->
+                <div class="interest">
+                    <h3>Art</h3>
+                    <p>I enjoy a lot of art forms like painting, poetry and photography. I write a bit of poetry and draw during my free time</p>
+                </div>
+
+                <!-- / interest -->
+                <div class="interest">
+                    <h3>Music</h3>
+                    <p>You know what they say about music, it's the spice of life:) I enjoy listening to good music. I'm pretty open to different genres, just needs to sound good. I like Afro beats a lot. I sometimes listen to a bit jazz, and reggae</p>
+                </div>
+            </div> <!-- / interests -->
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Background</h2>
+           <p class="section__subtitle section__subtitle--about"></p>
+
+           <div class="about-me__body">
+                <p>I grew up in Ghana, in a family of 5 and I'm the last of three. I like to draw during my free time, listen to music or enjoy some time sleeping :). Some of my favorite movies and shows are Black Panther, Blackish, God Friended Me, and NCIS</p>
+               <p>I'm a software developer, who likes to think creatively and is passionate about building impactful and top-quality solutions. I love all things tech and entrepreneurship and I aspire to add value to people's lives through technology.</p>
+           </div>
+
+           <img src="img/dev-elorm-02.jpg" alt="selfie-elorm" class="about-me__img">
+        </section>
+        
+        
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            <div class="portfolio">
+              <!-- Portfolio item 01 -->
+            <div class="portfolio__item">
+                <img src="img/dartmouthcollege.jpg" alt="" class="portfolio__img">
+            </div>
+
+            <!-- Portfolio item 02 -->
+            <div class="portfolio__item">
+                <img src="img/healthmine.png" alt="" class="portfolio__img">
+            </div>
+
+            <!-- Portfolio item 03 -->
+            <div class="portfolio__item">
+                <img src="img/pathfinding.png" alt="" class="portfolio__img">
+            </div>
+
+            <!-- Portfolio item 04 -->
+            <div class="portfolio__item">
+                <img src="img/drawings.png" alt="" class="portfolio__img">
+            </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+        <a href="mailto:sylvester.e.coch.22@dartmouth.edu" class="footer__link">sylvester.e.coch.22@dartmouth.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com">
+                <i class="fab fa-github"></i>
+            </a>
+            </li>
+        </ul> 
+    </footer>
+
+      <!-- Include js -->
+      <script src="script.js"></script>
+
+    </body>
 </html>
